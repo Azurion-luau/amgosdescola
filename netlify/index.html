@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão Revelador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    button {
+      background-color: #0a3d62; /* Azul escuro */
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #074179;
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      display: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="document.getElementById('mensagem').style.display='block'">
+    Mostrar Mensagem
+  </button>
+
+  <div id="mensagem">41231</div>
+
+</body>
+</html>
