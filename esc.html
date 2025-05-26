@@ -12,21 +12,7 @@
       background: #222;
       color: #eee;
       font-family: Arial, sans-serif;
-      flex-direction: column;
-      gap: 20px;
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background-color: #7289da;
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #5b6eae;
+      font-size: 48px;
     }
     /* Anúncio invisível */
     #ad {
@@ -42,7 +28,7 @@
 </head>
 <body>
 
-  <button id="redirectBtn">Ir para o Discord</button>
+  <div id="code">Carregando...</div>
 
   <!-- Anúncio invisível -->
   <iframe
@@ -54,9 +40,9 @@
   ></iframe>
 
   <script>
-    document.getElementById('redirectBtn').addEventListener('click', () => {
-      window.location.href = 'https://discord.gg/Mtj6qkvaw8';
-    });
+    const chance = Math.random();
+    const code = chance <= 0.01 ? "123511" : "124112";
+    document.getElementById("code").textContent = code;
   </script>
 
 </body>
