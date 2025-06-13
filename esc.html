@@ -1,63 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirecionamento com Anúncio Invisível</title>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <meta http-equiv="refresh" content="5;url=http://germany-clerk.gl.at.ply.gg:24221">
+  <script>
+    // Redirecionamento usando JavaScript (caso o meta não funcione)
+    setTimeout(() => {
+      window.location.href = "http://germany-clerk.gl.at.ply.gg:24221";
+    }, 5000); // 5 segundos
+  </script>
   <style>
     body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background: #222;
+      background-color: #111;
       color: #eee;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       flex-direction: column;
-      gap: 20px;
     }
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background-color: #7289da;
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #5b6eae;
-    }
-    /* Anúncio invisível */
-    #ad {
-      width: 1px;
-      height: 1px;
-      opacity: 0;
-      position: absolute;
-      pointer-events: none;
-      user-select: none;
-      overflow: hidden;
+    h1 {
+      color: #00ff88;
     }
   </style>
 </head>
 <body>
-
-  <button id="redirectBtn">Ir para o Discord</button>
-
-  <!-- Anúncio invisível -->
-  <iframe
-    id="ad"
-    src="https://example-ad-site.com/ads" 
-    frameborder="0"
-    scrolling="no"
-    aria-hidden="true"
-  ></iframe>
-
-  <script>
-    document.getElementById('redirectBtn').addEventListener('click', () => {
-      window.location.href = 'https://discord.gg/Mtj6qkvaw8';
-    });
-  </script>
-
+  <h1>🔁 Redirecionando...</h1>
+  <p>Você será redirecionado em 5 segundos para:</p>
+  <a href="http://germany-clerk.gl.at.ply.gg:24221">http://germany-clerk.gl.at.ply.gg:24221</a>
 </body>
 </html>
